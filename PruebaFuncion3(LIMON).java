@@ -38,7 +38,7 @@ public class Prueba3 {
 
     static void prepararPruebas() {
 
-        System.out.println("Preparando Tests");
+        System.out.println("Iniciando Pruebas");
 
         funcion = new Funcion();
 
@@ -52,7 +52,7 @@ public class Prueba3 {
 
         pruebasRealizadas++;
 
-        System.out.println("Ejecutando test " + pruebasRealizadas);
+        System.out.println("Pruebas realizandose " + pruebasRealizadas);
 
     }
 
@@ -62,7 +62,7 @@ public class Prueba3 {
 
     private void terminadaPrueba() {
 
-        System.out.println("Se ha ejecutado el test: " + pruebasRealizadas);
+        System.out.println("Pruebas realizadas: " + pruebasRealizadas);
 
     }
 
@@ -72,7 +72,7 @@ public class Prueba3 {
 
     static void terminarPruebas() {
 
-        System.out.println("Se ha terminado de ejecutar todas las pruebas");
+        System.out.println("Final de pruebas");
 
         funcion = null;
 
