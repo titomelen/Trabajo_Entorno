@@ -78,7 +78,7 @@ public class Prueba3 {
 
     }
     
-    @DisplayName("Test de Caja Negra con un valor")
+    @DisplayName("Test de Caja Negra con un valor-limon")
 
     @Test
 
