@@ -38,7 +38,7 @@ public class PruebaFuncion1 {
 
     static void prepararPruebas() {
 
-        System.out.println("Preparando Tests");
+        System.out.println("Iniciando Pruebas");
 
         funcion = new Funcion();
 
@@ -52,7 +52,7 @@ public class PruebaFuncion1 {
 
         pruebasRealizadas++;
 
-        System.out.println("Test en ejecucion " + pruebasRealizadas);
+        System.out.println("Pruebas realizandose " + pruebasRealizadas);
 
     }
 
@@ -62,7 +62,7 @@ public class PruebaFuncion1 {
 
     private void terminadaPrueba() {
 
-        System.out.println("Test realizados: " + pruebasRealizadas);
+        System.out.println("Pruebas realizadas: " + pruebasRealizadas);
 
     }
 
