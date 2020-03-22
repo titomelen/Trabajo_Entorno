@@ -40,7 +40,7 @@ public class PruebaFuncion6 {
     }
     @DisplayName("Carlos Villar")
     @Test
-    void testFuncion6_2() {
+    void testFuncion6() {
         assertNull(0, 0, 0, 0, funcion.Funcion6(null));
     } 
 }
