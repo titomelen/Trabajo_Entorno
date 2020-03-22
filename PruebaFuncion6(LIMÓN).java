@@ -48,7 +48,7 @@ public class Prueba6 {
 
         pruebasRealizadas++;
 
-        System.out.println("Pruebas realizandose " + pruebasRealizadas);
+        System.out.println("Pruebas realizandose  " + pruebasRealizadas);
 
     }
 
