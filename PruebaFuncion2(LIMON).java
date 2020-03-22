@@ -34,7 +34,7 @@ public class PruebaFuncion2 {
 
     static void prepararPruebas() {
 
-        System.out.println("Preparando Tests");
+        System.out.println("Iniciando Pruebas");
 
         funcion = new Funcion();
 
@@ -74,11 +74,11 @@ public class PruebaFuncion2 {
 
     }
 
-    @DisplayName("Test de Analisis de valores limites")
+    @DisplayName("Test de Analisis de valores limites-limon")
 
     @Test 
 
-    void testFuncion2() {
+    void PruebaFuncion2() {
 
         assertEquals(true, funcion.funcion2(500));
 
