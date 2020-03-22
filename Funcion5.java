@@ -1,15 +1,8 @@
 package Funciones;
 public class Funcion5{
-public static void main(String[] args) {
 
 
-    int [] numero = {2,8,16,48};
-
-
-System.out.println(Funcion5(numero));
-}
-
-	public static int Funcion5(int [] num) {
+	public  int Funcion5(int [] num) {
 
 		int tam = num.length;
 		int sum = 0; 
