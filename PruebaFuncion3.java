@@ -41,6 +41,6 @@ public class PruebaFuncion3 {
     @DisplayName("Carlos Villar")
     @Test
     void testFuncion3() {
-    	assertEquals(0, funcion.funcion3(20, 400));
+    	assertNotEquals(0, funcion.funcion3(20, 400));
     }
 }
