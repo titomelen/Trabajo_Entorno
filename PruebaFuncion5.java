@@ -1,26 +1,46 @@
 package Funciones;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class PruebaFuncion5 {
-	static int contpruebas = 0;
-    static Funcion5 func = null;
+public class PruebaFuncion5 {
+
+    static Funcion3 funcion = null;
+    static int pruebasRealizadas = 0;
 
     @BeforeAll
     static void prepararPruebas() {
-        System.out.println("Empezamos las Pruebas.");
-        func = new Funcion5();
+        System.out.println("Preparando Tests");
+        funcion = new Funcion3();
     }
-	@Test
-	@DisplayName("Prueba de caja negra para verificar que funciona correctamente")
-	void test() {
-		int [] res= {27,7,2001};
-		assertEquals(2035,func.Funcion5(res));
-	}
 
+    @BeforeEach
+    private void preparaPruebaEjecutar() {
+        pruebasRealizadas++;
+        System.out.println("Ejecutando test " + pruebasRealizadas);
+    }
+
+    @AfterEach
+    private void terminadaPrueba() {
+        System.out.println("Se ha ejecutado el test: " + pruebasRealizadas);
+    }
+
+    @AfterAll
+    static void terminarPruebas() {
+        System.out.println("Se ha terminado de ejecutar todas las pruebas");
+        funcion = null;
+    }
+    @DisplayName("Carlos Villar")
+    @Test
+    void testFuncion5() {
+        assertNull(funcion.Funcion5(null));
+    }
 }
+
