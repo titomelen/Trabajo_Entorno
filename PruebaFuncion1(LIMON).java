@@ -52,7 +52,7 @@ public class PruebaFuncion1 {
 
         pruebasRealizadas++;
 
-        System.out.println("Ejecutando test " + pruebasRealizadas);
+        System.out.println("Test en ejecucion " + pruebasRealizadas);
 
     }
 
@@ -62,7 +62,7 @@ public class PruebaFuncion1 {
 
     private void terminadaPrueba() {
 
-        System.out.println("Se ha ejecutado el test: " + pruebasRealizadas);
+        System.out.println("Test realizados: " + pruebasRealizadas);
 
     }
 
@@ -72,18 +72,18 @@ public class PruebaFuncion1 {
 
     static void terminarPruebas() {
 
-        System.out.println("Se ha terminado de ejecutar todas las pruebas");
+        System.out.println("Final de pruebas");
 
         funcion = null;
 
     }
 
 
-    @DisplayName("Test de Caja Negra con un valor que no sea divisible")
+    @DisplayName("Test de Caja Negra con un valor que no sea divisible-limon")
 
     @Test
 
-    void testFuncion1_2() {
+    void testFuncion1() {
 
         assertEquals(false, funcion.funcion1(32));
 
