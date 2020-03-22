@@ -32,7 +32,7 @@ class PruebaFuncion2 {
 	@DisplayName("Carlos Villar")
 	@Test
 	void funcion2Test2() {
-		assertEquals(false, f.numeroIntervalo(200));
+		assertNotEquals(false, f.numeroIntervalo(200));
 	}
 	
 	@AfterEach
